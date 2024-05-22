@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <header id="header">
+            <div class="heeder__navbar row">
+                <div class="heeder__navbar-menu">
+                    <i class="fa-solid fa-list-ul"></i>
+                </div>
+                <div class="heeder__navbar-name">
+                    <h3>Name</h3>
+                </div>
+                <div class="heeder__navbar-use">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="header__play-music-block">
+                <div class="header__play-music-item">
+                    <img class="header__play-music-item-img" src="" alt="playing">
+                </div>
+                <div class="header__play-music-item">
+                    <div class="header__play-music-item-info">
+                        <h3 class="header__play-music-name-song">Về phía mưa</h3>
+                        <span class="header__play-music-info-song">Thế bảo</span>
+                    </div>
+                </div>
+                <div class="header__play-music-item">
+                    <input class="header__play-music-play-range" type="range" value="100" max="100">
+                </div>
+                <div class="header__play-music-item row">
+                    <div class="header__play-music-random">
+                        <i class="header__play-music fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="header__play-music-play ">
+                        <!-- <audio id="audio" controls src=""></audio> -->
+                        <audio id="audio" loop src=""></audio>
+                        <i id="audio-previous" class="header__play-music-previous fa-solid fa-play"></i>
+                        <i id="audio-play" class="header__play-music-player fa-solid fa-circle-play"></i>
+                        <i id="audio-next" class="header__play-music-next fa-solid fa-play"></i>
+                    </div>
+                    <div class="header__play-music-repeat">
+                        <i class="header__play-music fa-solid fa-repeat"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

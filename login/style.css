@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+input {
+    background: none;
+    outline: 0;
+    color: #fff;
+    border: none;
+}
+
+.login {
+    width: 300px;
+    font-size: 2rem;
+    color: #fff;
+    margin: 50px auto;
+}
+
+.form__title {
+    margin-block: 3rem;
+}
+
+.form-login {
+    color: #c6c6c6;
+    display: flex;    
+    flex-direction: column;
+    gap: 10px;
+    background-color: #171717;
+    padding-inline: 2.5rem;
+    border-radius: 3rem;
+    padding-bottom: 50px;
+    text-align: center;
+    transition: all linear 0.3s;
+}
+
+.form-login:hover {
+    transform: scale(1.05);
+}
+
+.form-field {    
+    display: flex;
+    gap: 10px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 1.5rem;
+    box-shadow: inset 5px 10px 15px rgb(5, 5, 5);
+}
+
+.btn-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.btn-forget-login {
+    width: 100%;
+}
+
+.btn-login {
+    width: 48%;
+}
+
+.btn-login:hover {
+    background-color: #000;
+}
+
+.btn-forget-login:hover {
+    background-color: #d83131;
+    color: #fff;
+}
+
+.btn-color {
+    background-color: #404040;
+    border: none;
+    border-radius: 0.5rem;
+    padding-block: 10px;
+    color: #c6c6c6;
+}
+
+.form__username {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .login {
+        margin: 100px auto;
+    }
+    
+}

@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.body {
+    width: 378px;
+    height: max-content;
+    margin: 0 auto;
+    background-color: #e2e2e2;
+    /* background-image: linear-gradient(150deg, #C196DE, #59257A); */
+}
+
+#header {
+    font-size: 1.6rem;
+    background-color: transparent;
+    padding-inline: 20px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    
+}
+
+.heeder__navbar {
+    justify-content: space-between;
+    line-height: 50px;
+    position: fixed;
+    width: 378px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-inline: 20px ;
+    /* background-color: #9162B0; */
+    background-color: #fff;
+    box-shadow: 0 3px 10px #b8b8b8;
+    z-index: 2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.heeder__navbar-menu {
+
+}
+
+.heeder__navbar-name {
+
+}
+
+.heeder__navbar-use {
+}
+
+.header__play-music-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 340px;
+    /* background-color: #ddaaff; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding-block: 20px;
+    margin-top: 60px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px #9c9c9c91;
+    z-index: 1;
+}
+
+.header__play-music-item {
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__play-music-item-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(1px 1px 3px #1a1a1a);
+}
+
+.header__play-music-item-info {
+    height: 42px;
+}
+
+.header__play-music-name-song {
+    margin-inline: 20px;
+}
+
+.header__play-music-info-song {
+    font-size: 1.3rem;
+}
+
+.header__play-music-play-range {
+    width: 250px;
+    height: 5px;
+    accent-color: #2a2626;
+    outline: none;    
+    cursor: pointer;
+}
+
+.header__play-music-repeat, .header__play-music-random {
+    opacity: 0.4;
+}
+
+.header__play-music-repeat.active, .header__play-music-random.active {
+    opacity: 1;
+}
+
+.header__play-music-play-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header__play-music-play-range:hover::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+
+
+.header__play-music-play {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header__play-music-previous {
+    transform: rotate(180deg) translateY(1px);
+}
+
+.header__play-music-previous, .header__play-music-player, .header__play-music-next {
+    cursor: pointer;
+    font-size: 3.5rem;
+}
+
+.header__play-music {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    padding-inline: 20px;
+    gap: 10px;
+    padding-bottom: 30px;
+    margin-top: 400px;
+}
+
+.list-song-block:active {
+    opacity: 0.8;
+}
+
+.list-song-block.active .list-song-item {
+    /* background-color: #eccfffa0; */
+    background-color: #eaeaea;
+
+}
+
+
+.list-song-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #919191;
+    cursor: pointer;
+}
+
+.list-song-play {
+
+}
+
+.list-song-info {
+    flex: 1;
+}
+
+.list-song-info p {
+    font-size: 1.4rem;
+}
+
+.list-song-time {
+
+}
+
+.list-song-love {
+
+}
+
+.list-song-play {
+    
+}
+
+.list-song-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translateY(3px);
+}
+
+.list-song-love-icon {
+    font-size: 2.5rem;
+}
